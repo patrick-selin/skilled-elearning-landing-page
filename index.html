@@ -11,13 +11,13 @@
       href="./assets/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Skilled e-learning landing page</title>
+    <title>Skilled e-learning landing page</title>
   </head>
   <body>
     <div class="container">
       <nav class="nav-container">
-        <img src="./starter-code/assets/logo-dark.svg" alt="company logo" />
-        <a href="#" class="btn">Get Started</a>
+        <img class="logo" src="./starter-code/assets/logo-dark.svg" alt="company logo" />
+        <a href="#" class="btn btn-nav">Get Started</a>
       </nav>
 
       <header>
@@ -28,12 +28,18 @@
               Our modern courses across a range of in-demand skills will give
               you the knowledge you need to live the life you want.
             </p>
-            <a href="#" class="btn">Get Started</a>
+            <a href="#" class="btn btn-hero">Get Started</a>
           </div>
-          <div class="header-img">kuva</div>
+          <div class="header-img">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="./starter-code/assets/image-hero-desktop.png">
+              <source media="(min-width: 650px)" srcset="./starter-code/assets/image-hero-tablet.png">
+              <source media="(min-width: 140px)" srcset="./starter-code/assets/image-hero-mobile.png">
+              <img src="./starter-code/assets/image-hero-mobile.png" class="imageHero">
+            </picture>
+          </div>
         </div>
       </header>
-      <div class="test">gradiwen</div>
       <main>
         <div class="grid-container">
           <div class="heading-card">
