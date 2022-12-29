@@ -115,6 +115,10 @@ p {
    
 }
 
+.card {
+    max-width: 350px;
+    max-height: 350px;
+}
 
 /* CONTAINERS  */
 
@@ -155,18 +159,23 @@ p {
 }
 
 
-/* .images {
-    overflow: hidden;
+.header-img {
+    /* overflow: hidden;
     position: absolute;
     z-index: -1;
     left: calc(50% + 40px);
-    top: -144px;
+    top: -144px; */
 }
 
-.images img {
-    position: relative;
+.header-img img {
+    /* position: relative; */
 }
-  */
+
+.grid-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+}
 
 
 
@@ -177,11 +186,23 @@ p {
 
 @media (min-width: 650px) {
     body {
-        background-color: aliceblue;
+    
     }
 
     .header-container {
         display: flex;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+
+}
+
+
+@media (min-width: 970px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr) ;
     }
 
 }
