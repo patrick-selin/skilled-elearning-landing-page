@@ -84,7 +84,7 @@ h3 {
 }
 
 p {
-  color: var(--blue-gray);
+  color: var(--gray);
 }
 
 /* UTILITY CLASSES */
@@ -119,13 +119,15 @@ p {
   color: var(--white);
 }
 
+
 .card {
   position: relative;
   /* max-width: 350px; */
   /* max-height: 350px; */
+  background-color: var(--white);
   box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
   border-radius: 1rem;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 2rem 2rem;
 }
 .card img {
   /* transform: translateY(-90px); */
@@ -134,12 +136,29 @@ p {
   top: -25px;
 }
 
+.card h3 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  color: var(--gr-red);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
 .heading-card {
   background: linear-gradient(to bottom, var(--gr-orange), var(--gr-red));
   /* background-color: brown; */
   padding: 1rem 2rem;
   color: var(--white);
-  
+  line-height: 1.2;
 }
 
 /* CONTAINERS  */
@@ -157,6 +176,8 @@ p {
   align-items: center;
   justify-content: space-between;
   margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .header-container {
@@ -177,21 +198,16 @@ p {
 .header-info a {
   /* padding-top: 12rem; */
   display: inline-block;
-}
-
-.header-img {
-  /* overflow: hidden;
-    position: absolute;
-    z-index: -1;
-    left: calc(50% + 40px);
-    top: -144px; */
+  position: relative;
 }
 
 .header-img img {
-  /* position: relative; */
+  margin: auto;
 }
 
 .grid-container {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   display: grid;
   grid-column-gap: 2rem;
   grid-row-gap: 5rem;
@@ -214,14 +230,19 @@ p {
   justify-content: space-between;
 }
 
-@media (min-width: 650px) {
-  body {
-  }
-
+@media (min-width: 700px) {
   .header-container {
     display: flex;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .header-info {
+    flex-basis: 45%;
+  }
+
+  .header-img {
+    flex-basis: 55%;
   }
 
   .grid-container {
@@ -233,12 +254,14 @@ p {
   .heading-card {
     padding: 3.5rem 1rem;
   }
+  .align {
+    display: block;
+    padding-top: 1.8rem;
+  }
 }
 
 @media (min-width: 970px) {
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .card {
   }
 }
