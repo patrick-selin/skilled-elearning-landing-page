@@ -4,7 +4,7 @@
 
 ### Screenshot
 
-![solution](https://g)
+![solution](https://github.com/patrick-selin/skilled-elearning-landing-page/blob/main/Skilled%20e-learning%20landing%20page%20solution.png)
 
 ### Links
 
